@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NIWENDO STUDIOS</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Impact', 'Arial Black', sans-serif;
+            background-color: #000000;
+            color: #ffffff;
+            min-height: 100vh;
+            padding: 3vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+
+        .hero {
+            width: 100%;
+            margin-bottom: 8vh;
+        }
+
+        h1 {
+            font-size: 12vw; 
+            line-height: 0.8;
+            text-transform: uppercase;
+            letter-spacing: -2px;
+        }
+
+        .orange-text {
+            color: #ff5500;
+        }
+
+        .content-area {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 60px;
+            width: 100%;
+            font-family: Arial, sans-serif;
+        }
+
+        .block {
+            flex: 1;
+            min-width: 280px;
+        }
+
+        .block h2 {
+            font-family: 'Impact', sans-serif;
+            font-size: 2.5rem;
+            text-transform: uppercase;
+            color: #ffffff;
+            margin-bottom: 15px;
+            letter-spacing: 1px;
+        }
+
+        .block p {
+            font-size: 1.2rem;
+            line-height: 1.5;
+            color: #ffffff;
+            font-weight: bold;
+        }
+
+        footer {
+            margin-top: 8vh;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .footer-tag {
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            color: #ff5500;
+            letter-spacing: 2px;
+        }
+
+        .mail-giant {
+            font-size: 7vw;
+            color: #ffffff;
+            text-decoration: none;
+            text-transform: uppercase;
+            line-height: 0.9;
+            transition: color 0.1s ease;
+        }
+
+        .mail-giant:hover {
+            color: #ff5500;
+        }
+
+        @media (max-width: 768px) {
+            h1 { font-size: 16vw; }
+            .mail-giant { font-size: 10vw; }
+            .content-area { gap: 40px; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="hero">
+        <h1>NIWENDO<br><span class="orange-text">STUDIOS</span></h1>
+    </div>
+
+    <div class="content-area">
+        <div class="block">
+            <h2>Who we are</h2>
+            <p>We are Niwendo Studios, or simply Niwendo. We create our own games, experiment with technology, and build things that we enjoy making. Sometimes we might take things a
+                little too far and end up creating our own engine for a small game just because we felt like it. Why? Because we can, and because we love exploring new ideas.
+                Niwendo is built by a small team of developers and creatives who are passionate about bringing their own ideas to life.
+            </p>
+        </div>
+
+        <div class="block">
+            <h2>What we do</h2>
+            <p>Our main focus is game development. We don’t just want to create games.
+                We also like experimenting with new systems, developing our own technologies, and turning creative ideas into real projects.
+                This website is currently a work in progress. The proper Niwendo website will come eventually. until then, we keep building, testing, and improving.
+                If you have any questions or want to get in contact, you can reach us through the email address provided below.
+            </p>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-tag">CONTACT US &darr;</div>
+        <a href="mailto:info@niwendo.com" class="mail-giant">INFO@NIWENDO.COM</a>
+    </footer>
+
+</body>
+</html>
