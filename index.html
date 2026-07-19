@@ -4,6 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NIWENDO STUDIOS</title>
+    <meta name="description" content="Niwendo Studios creates indie games, experiments with technology, and builds unique digital experiences.">
+
+    <meta name="keywords" content="Niwendo, Niwendo Studios, Indie Games, Game Development, C#, Unity, Minecraft C# Edition, Strange Game">
+
+    <meta name="author" content="Niwendo Studios">
+
+    <meta property="og:title" content="Niwendo Studios">
+    <meta property="og:description" content="Creating games, experimenting with technology, and building creative projects.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.niwendo.com">
+
+    <link rel="icon" href="favicon.png">
+
+    <meta property="og:image" content="https://www.niwendo.com/favicon.png">
+
+    <meta name="theme-color" content="#ff5500">
     <style>
         * {
             box-sizing: border-box;
@@ -101,6 +117,28 @@
             .mail-giant { font-size: 10vw; }
             .content-area { gap: 40px; }
         }
+
+        .games {
+            margin-top: 8vh;
+            width: 100%;
+        }
+
+        .games h2 {
+            font-size: 2.5rem;
+            margin-bottom: 25px;
+            text-transform: uppercase;
+        }
+
+        .game-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 25px;
+        }
+
+        .game-list iframe {
+            border: none;
+            max-width: 100%;
+        }
     </style>
 </head>
 <body>
@@ -125,6 +163,32 @@
                 This website is currently a work in progress. The proper Niwendo website will come eventually. until then, we keep building, testing, and improving.
                 If you have any questions or want to get in contact, you can reach us through the email address provided below.
             </p>
+        </div>
+    </div>
+
+    <div class="games">
+        <h2>Our Games</h2>
+
+        <div class="game-list">
+
+            <iframe frameborder="0"
+                src="https://itch.io/embed/4166833?linkback=true&amp;bg_color=000000&amp;fg_color=ffffff&amp;border_color=383838"
+                width="552"
+                height="167">
+                <a href="https://niwendo.itch.io/minecraft-csharp-edition">
+                    Minecraft C# Edition by Niwendo
+                </a>
+            </iframe>
+
+            <iframe frameborder="0"
+                src="https://itch.io/embed/3834734?bg_color=000000&amp;fg_color=ffffff&amp;border_color=2c2c2c"
+                width="552"
+                height="167">
+                <a href="https://niwendo.itch.io/strange-game">
+                    Strange Game by Niwendo
+                </a>
+            </iframe>
+
         </div>
     </div>
 
