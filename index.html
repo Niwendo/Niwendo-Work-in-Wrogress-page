@@ -16,6 +16,7 @@
     <meta property="og:url" content="https://www.niwendo.com">
 
     <link rel="icon" href="favicon.png">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.6.0/css/all.css">
 
     <meta property="og:image" content="https://www.niwendo.com/favicon.png">
 
@@ -42,6 +43,52 @@
         .hero {
             width: 100%;
             margin-bottom: 8vh;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 60px;
+        }
+
+        .hero-image {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .hero-image img {
+            width: 650px;
+            max-width: 100%;
+            border-radius: 12px;
+            object-fit: cover;
+        }
+
+        .artist-credit {
+            margin-top: 12px;
+            font-family: Arial, sans-serif;
+            font-size: 0.85rem;
+            color: #777;
+            text-align: center;
+        }
+
+        .artist-credit a {
+            color: #ff5500;
+            text-decoration: none;
+            transition: color 0.15s;
+        }
+
+        .artist-credit a:hover {
+            color: #E4405F;
+        }
+
+        @media (max-width: 1100px) {
+            .hero {
+                flex-direction: column;
+            }
+
+            .hero-image img {
+                width: 100%;
+            }
         }
 
         h1 {
@@ -118,6 +165,8 @@
             .content-area { gap: 40px; }
         }
 
+        /* Games */
+
         .games {
             margin-top: 8vh;
             width: 100%;
@@ -139,12 +188,65 @@
             border: none;
             max-width: 100%;
         }
+
+        /* Footer */
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 35px;
+            margin-top: 30px;
+        }
+
+        .social-links a {
+            color: white;
+            font-size: 2rem;
+            transition: 0.15s;
+        }
+
+        .social-links a:hover {
+            transform: translateY(-2px);
+        }
+
+        /* YouTube */
+        .social-links .youtube:hover {
+            color: #ff0000;
+        }
+
+        /* itch.io */
+        .social-links .itch:hover {
+            color: #fa5c5c;
+        }
+
+        .copyright {
+            margin-top: 20px;
+            text-align: center;
+            font-family: Arial, sans-serif;
+            font-size: 0.9rem;
+            color: #777;
+        }
     </style>
 </head>
 <body>
 
     <div class="hero">
-        <h1>NIWENDO<br><span class="orange-text">STUDIOS</span></h1>
+
+        <h1>
+            NIWENDO<br>
+            <span class="orange-text">STUDIOS</span>
+        </h1>
+
+        <div class="hero-image">
+            <img src="hero.png" alt="Niwendo Artwork">
+
+            <div class="artist-credit">
+                Artwork by
+                <a href="https://instagram.com/nino_s_stuff" target="_blank">
+                    <i class="fa-brands fa-instagram"></i> @nino_s_stuff
+                </a>
+            </div>
+        </div>
+
     </div>
 
     <div class="content-area">
@@ -193,8 +295,26 @@
     </div>
 
     <footer>
-        <div class="footer-tag">CONTACT US &darr;</div>
-        <a href="mailto:info@niwendo.com" class="mail-giant">INFO@NIWENDO.COM</a>
+        <div class="footer-tag">CONTACT US ↓</div>
+
+        <a href="mailto:info@niwendo.com" class="mail-giant">
+            INFO@NIWENDO.COM
+        </a>
+
+        <div class="social-links">
+
+            <a href="https://youtube.com/@niwendostudios" target="_blank" aria-label="YouTube" class="youtube">
+                <i class="fa-brands fa-youtube"></i>
+            </a>
+
+            <a href="https://niwendo.itch.io" target="_blank" aria-label="itch.io" class="itch">
+                <i class="fa-brands fa-itch-io"></i>
+            </a>
+        </div>
+
+        <div class="copyright">
+            © 2026 Niwendo Studios
+        </div>
     </footer>
 
 </body>
