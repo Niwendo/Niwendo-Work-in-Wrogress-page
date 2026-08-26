@@ -132,11 +132,29 @@ h1 {
     display: flex;
     flex-wrap: wrap;
     gap: 25px;
+    justify-content: center;
+    align-items: flex-end;
 }
 
-.game-list iframe {
-    border: none;
-    max-width: 100%;
+.game-card {
+    width: 300px;
+    display: block;
+    border-radius: 1px;
+    overflow: hidden;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.game-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.6);
+}
+
+.game-card img {
+    width: 100%;
+    aspect-ratio: 2 / 3;
+    object-fit: cover;
+    display: block;
 }
 
 
@@ -232,3 +250,6 @@ footer {
     .mail-giant { font-size: 10vw; }
     .content-area { gap: 40px; }
 }
+
+
+
