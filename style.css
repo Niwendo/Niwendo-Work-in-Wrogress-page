@@ -257,6 +257,29 @@ footer {
     color: #fa5c5c;
 }
 
+/* bluesky */
+.social-links .bsky:hover {
+    color: #1185FE;
+}
+
+/* Niwendo */
+.social-links .niwendo:hover {
+    color: #ED672F;
+}
+
+.brand-niwendo {
+    height: 1em;
+    width: auto;
+    vertical-align: middle;
+
+    filter: brightness(0) invert(1);
+    transition: filter 0.3s ease;
+}
+
+.social-links .niwendo:hover .brand-niwendo {
+    filter: brightness(0) saturate(100%) invert(52%) sepia(56%) saturate(2250%) hue-rotate(345deg) brightness(96%) contrast(93%);
+}
+
 .copyright {
     margin-top: 20px;
     text-align: center;
